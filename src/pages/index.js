@@ -15,19 +15,11 @@ function Index() {
   return (
     <main>
       <Helmet>
-        <title>Gatsby + Node.js (TypeScript) API</title>
+        <title>Rach McD</title>
       </Helmet>
-      <h1>Gatsby + Node.js (TypeScript) API</h1>
+      <h1>Rachael McDonald</h1>
       <h2>
-        Deployed with{' '}
-        <a
-          href="https://vercel.com/docs"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          Vercel
-        </a>
-        !
+        Multimedia Production, Aninimation, and Design
       </h2>
       <p>
         <a
