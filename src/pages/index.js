@@ -41,7 +41,6 @@ License: http://creativecommons.org/licenses/by/4.0/
         <a href="/api/date">
           <code>api/date</code> for the Date API with Node.js (TypeScript)
         </a>
-        .
       </p>
       <br />
       <h2>The date according to Node.js (TypeScript) is:</h2>
