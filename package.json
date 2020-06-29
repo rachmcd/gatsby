@@ -16,6 +16,7 @@
   },
   "scripts": {
     "dev": "gatsby develop",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "start": "react-scripts start"
   }
 }

@@ -19,13 +19,16 @@ function Index() {
       </Helmet>
       <h1>Rachael McDonald</h1>
       <h2>Production, Animation, VR Dev and Design</h2>
-    <iframe src="https://drive.google.com/file/d/1gDimoQIvk-dwoSAL90lAuS51qQp-xZop/preview" title ="2D Animation Reel" width="640" height="360" loop=1></iframe>
-  <h3>  
-<font size=3>  
-Music: Blippy Trance by Kevin MacLeod
-Link: https://incompetech.filmmusic.io/song/5759-blippy-trance
-License: http://creativecommons.org/licenses/by/4.0/
-   </font> </h3> 
+    {/* <iframe src="https://drive.google.com/file/d/1gDimoQIvk-dwoSAL90lAuS51qQp-xZop/preview" title ="2D Animation Reel" width="640" height="360" playlist=&loop=1></iframe> */}
+      <h3>  
+        {/* TODO: styling and font size */}
+      Music: Blippy Trance by Kevin MacLeod
+      <br/>
+      Link: https://incompetech.filmmusic.io/song/5759-blippy-trance
+      <br/>
+      License: http://creativecommons.org/licenses/by/4.0/
+      <br/>
+      </h3> 
       <p>
         <a
           href="https://github.com/vercel/vercel/blob/master/gatsby"
