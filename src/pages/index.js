@@ -1,17 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
+import styled from 'styled-components';
 import '../styles/index.css';
 
+const CreditsDiv = styled.div`
+  font-size: 16px;
+
+`
+
 function Index() {
-  const [date, setDate] = useState(null);
-  useEffect(() => {
-    async function getDate() {
-      const res = await fetch('/api/date');
-      const newDate = await res.text();
-      setDate(newDate);
-    }
-    getDate();
-  }, []);
+  
   return (
     <main>
       <Helmet>
@@ -19,16 +17,15 @@ function Index() {
       </Helmet>
       <h1>Rachael McDonald</h1>
       <h2>Production, Animation, VR Dev and Design</h2>
-    {/* <iframe src="https://drive.google.com/file/d/1gDimoQIvk-dwoSAL90lAuS51qQp-xZop/preview" title ="2D Animation Reel" width="640" height="360" playlist=&loop=1></iframe> */}
-      <h3>  
-        {/* TODO: styling and font size */}
-      Music: Blippy Trance by Kevin MacLeod
-      <br/>
-      Link: https://incompetech.filmmusic.io/song/5759-blippy-trance
-      <br/>
-      License: http://creativecommons.org/licenses/by/4.0/
-      <br/>
-      </h3> 
+      <iframe src="https://drive.google.com/file/d/1gDimoQIvk-dwoSAL90lAuS51qQp-xZop/preview" title ="2D Animation Reel" width="640" height="360"></iframe>
+      
+      
+      <CreditsDiv>
+          {/* TODO: styling and font size */}
+        <p>Music: Blippy Trance by Kevin MacLeod</p>
+        <p>Link: https://incompetech.filmmusic.io/song/5759-blippy-trance</p>
+        <p>License: http://creativecommons.org/licenses/by/4.0/</p>
+      </CreditsDiv>
       <p>
         <a
           href="https://github.com/vercel/vercel/blob/master/gatsby"
@@ -47,7 +44,7 @@ function Index() {
       </p>
       <br />
       <h2>The date according to Node.js (TypeScript) is:</h2>
-      <p>{date ? date : 'Loading date...'}</p>
+      
     </main>
   );
 }
