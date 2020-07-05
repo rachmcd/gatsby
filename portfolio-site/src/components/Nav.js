@@ -7,6 +7,8 @@ const StyledDiv = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 12rem;
+    margin: 4% 2%;
 
     .link {
         text-decoration: none;
@@ -15,6 +17,7 @@ const StyledDiv = styled.div`
     div {
         display: flex;
         flex-direction: column;
+        margin: 5% 0;
         // align-items: center; //TODO: FIX THIS?
     
         // .storyboard {

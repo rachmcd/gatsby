@@ -6,6 +6,7 @@ import styled from 'styled-components'
 const StyledDiv = styled.div`
     display: flex;
     justify-content: center;
+   
 
 `
 
@@ -14,7 +15,6 @@ const Homepage = () => {
         <StyledDiv>
             <Nav />
             <Header/>
-            
         </StyledDiv>
     )
 }

@@ -3,15 +3,17 @@ import styled from 'styled-components'
 
 const StyledDiv = styled.div`
     width: 100%;
+    max-width: 30rem;
+    max-height: 12rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     // justify-content: center;
     padding: 2% 2%;
-    border-radius: 10px;
-
+    margin: 4%;
+    
     div {
-        margin: 2% 0;
+        margin: 1% 0;
         display: flex;
         justify-content: center;
     }
@@ -20,7 +22,7 @@ const StyledDiv = styled.div`
     }
 
     .roles {
-        width: 80%;
+        width: 100%;
         text-transform: uppercase;
         display: flex;
         justify-content: space-between;
