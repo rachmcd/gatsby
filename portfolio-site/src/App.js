@@ -6,12 +6,23 @@ import Homepage from './components/homepage/Homepage'
 import Illustration from './components/illustration/Illustration'
 import Reel from './components/reel/Reel'
 import Resume from './components/resume/Resume'
+import styled from 'styled-components'
+
+
+const StyledDiv = styled.div`
+  width: 90%;
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+
+`
 
 function App() {
 
 
   return (
-    <div>
+    <StyledDiv>
       <Route exact path = "/">
         <Homepage />
       </Route>
@@ -24,7 +35,7 @@ function App() {
       <Route path = "/resume">
         <Resume />
       </Route>
-    </div>
+    </StyledDiv>
   );
 }
 
