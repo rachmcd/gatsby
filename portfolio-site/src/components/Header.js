@@ -2,23 +2,33 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledDiv = styled.div`
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2% 5%;
+    // justify-content: center;
+    padding: 2% 2%;
     border-radius: 10px;
 
     div {
         margin: 2% 0;
+        display: flex;
+        justify-content: center;
     }
     h1 {
         font-size: 2rem;
     }
 
     .roles {
+        width: 80%;
         text-transform: uppercase;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+
+        p {
+            font-size: 1rem;
+            margin: 0 5%;
+        }
     }
 
 

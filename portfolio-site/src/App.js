@@ -10,11 +10,12 @@ import styled from 'styled-components'
 
 
 const StyledDiv = styled.div`
-  width: 90%;
+  // width: 95%;
 
   @media (max-width: 500px) {
     width: 100%;
   }
+
 
 `
 
