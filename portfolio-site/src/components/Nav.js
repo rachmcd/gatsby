@@ -18,15 +18,7 @@ const StyledDiv = styled.div`
         display: flex;
         flex-direction: column;
         margin: 5% 0;
-        // align-items: center; //TODO: FIX THIS?
-    
-        // .storyboard {
-        //     font-size: 1rem;
-
-        // }
-        // .not-storyboard {
-        //     font-size: 1.5rem;
-        // }
+        
         p {
             margin: 5% 5%;
             padding: 0 2%;
@@ -35,9 +27,14 @@ const StyledDiv = styled.div`
             &:hover {
             border-left: 2px solid #ec008c;
             border-right: 2px solid #ec008c;
+            }
             
+            
+        }
 
-            
+        .focus {
+            border-left: 2px solid #ec008c;
+            border-right: 2px solid #ec008c; 
         }
     }
 
@@ -45,19 +42,25 @@ const StyledDiv = styled.div`
 
 
 `
-
-const Nav = () => {
+// TODO: hover and focus should be different
+const Nav = props => {
+    let route = ""
+    if (props.route) {
+        route = props.route
+    }
+    
+    console.log(route)
     return(
         <StyledDiv className = "light-div">
             <div>
                 <Link className = "link" to = "/illustration">
-                    <p className = "storyboard">Storyboards &amp; Illustration</p>
+                    <p className = {route == "/illustration" ? "storyboard focus" : "storyboard"}>Storyboards &amp; Illustration</p>
                 </Link>
                 <Link className = "link" to = "/resume">
-                    <p className = "not-storyboard">Resume</p>
+                    <p className = {route == "/resume" ? "focus not-storyboard" : "not-storyboard"}>Resume</p>
                 </Link>
-                <Link className = "link" to = "/reels">
-                    <p className = "not-storyboard">Reels</p>
+                <Link className = "link" to = "/reel">
+                    <p className = {route == "/reel"? "focus not-storyboard" : "not-storyboard"}>Reels</p>
                 </Link>
             </div>
         </StyledDiv>

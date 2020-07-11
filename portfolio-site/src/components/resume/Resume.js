@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import DownloadLink from 'react-download-link'
 import PDFView from './PDFView.js'
 import resume from './resume.pdf'
+import {useRouteMatch} from 'react-router-dom'
 
 
 const StyledDiv = styled.div`
@@ -43,16 +44,16 @@ const StyledDiv = styled.div`
 
 
     }
-    // had to use !important here, not happy about it
+    
     .download {
         width: 30rem;
         align-self: left;
         text-transform: uppercase;
         font-size: 1.2rem;
         text-align: right;
-        margin-bottom: 2.5% !important;
-        text-decoration: none !important;
-        color: #ec008c !important;
+        margin-bottom: 2.5%;
+        text-decoration: none;
+        color: #ec008c;
         
     }
 
@@ -61,11 +62,14 @@ const StyledDiv = styled.div`
 
 // TODO: fix scrollbar color
 const Resume = () => {
+
+    const route = useRouteMatch();
+
     return(
         <>
             <StyledDiv>
             <div className = "nav">
-                <Nav />
+                <Nav route = {route.path}/>
             </div>
             <div className = "header">
                 <Header />
