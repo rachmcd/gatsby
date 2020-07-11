@@ -10,7 +10,7 @@ const StyledDiv = styled.div`
     align-items: center;
     // justify-content: center;
     padding: 2% 2%;
-    margin: 4%;
+    // margin: 4%;
     
     div {
         margin: 1% 0;

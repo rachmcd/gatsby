@@ -8,7 +8,7 @@ const StyledDiv = styled.div`
     flex-direction: column;
     justify-content: center;
     max-width: 12rem;
-    margin: 4% 2%;
+    // margin: 4% 2%;
 
     .link {
         text-decoration: none;

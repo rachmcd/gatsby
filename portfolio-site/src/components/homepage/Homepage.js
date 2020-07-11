@@ -5,16 +5,30 @@ import styled from 'styled-components'
 
 const StyledDiv = styled.div`
     display: flex;
-    justify-content: center;
-   
+    margin-top: 5%;
+    div {
+        width: 100%;
+        
+    }
+    .nav {
+        width: 25rem;
+        margin: 0 2%;
+    }
+
+
 
 `
 
 const Homepage = () => {
     return(
         <StyledDiv>
-            <Nav />
-            <Header/>
+            <div className = "nav">
+                <Nav />
+            </div>
+            <div className = "header">
+                <Header />
+            </div>
+            
         </StyledDiv>
     )
 }
