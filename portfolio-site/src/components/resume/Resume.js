@@ -2,8 +2,9 @@ import React from 'react'
 import Header from '../Header'
 import Nav from '../Nav'
 import styled from 'styled-components'
-
+import DownloadLink from 'react-download-link'
 import PDFView from './PDFView.js'
+import resume from './resume.pdf'
 
 
 const StyledDiv = styled.div`
@@ -26,7 +27,8 @@ const StyledDiv = styled.div`
     }
 
     .resumepdf {
-        margin: 5% 0;
+        margin-top: 5%;
+        margin-bottom: 2.5%;
         max-width: 35rem;
         overflow: scroll;
         
@@ -41,14 +43,16 @@ const StyledDiv = styled.div`
 
 
     }
-
+    // had to use !important here, not happy about it
     .download {
         width: 30rem;
         align-self: left;
         text-transform: uppercase;
         font-size: 1.2rem;
         text-align: right;
-        margin-bottom: 5%;
+        margin-bottom: 2.5% !important;
+        text-decoration: none !important;
+        color: #ec008c !important;
         
     }
 
@@ -70,7 +74,11 @@ const Resume = () => {
                         <PDFView/>
                     </div>
                 </div>
-                <p className = "download">Download</p>
+                {/* <DownloadLink className = "download" label = "Download" filename = "resume.pdf" exportFile = {() => {return resume}} /> */}
+                <a href="./assets/resume.pdf" className = "download" target = "_blank">Download</a>
+                    
+               
+                
             </div>
             
         </StyledDiv>

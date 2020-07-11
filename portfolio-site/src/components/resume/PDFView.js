@@ -9,8 +9,7 @@ const StyledDiv = styled.div`
 
     .document {
         max-width: 100%;
-
-        // width: 45rem;
+        
     }
     
 
